@@ -26,6 +26,7 @@ void setup() {
   // Initialize serial and wait for port to open:
   Serial.begin(9600);
   dht.begin();
+  digitalWrite(LED_BUILTIN,led);
   // This delay gives the chance to wait for a Serial Monitor without blocking if none is found
   delay(1500); 
   
